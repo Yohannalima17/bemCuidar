@@ -1,0 +1,20 @@
+plugins {
+	id 'org.springframework.boot' version '3.3.4' // Verifique a versão
+	id 'io.spring.dependency-management' version '1.1.0'
+	id 'java'
+}
+
+group = 'com.agencia'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17' // Verifique se está usando Java 17 ou superior
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.h2database:h2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
